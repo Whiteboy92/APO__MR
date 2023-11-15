@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APO_Copy_MR", "APO_Copy_MR\APO_Copy_MR.csproj", "{672757C3-2444-4436-904E-D2CE8171D9A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{672757C3-2444-4436-904E-D2CE8171D9A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{672757C3-2444-4436-904E-D2CE8171D9A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{672757C3-2444-4436-904E-D2CE8171D9A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{672757C3-2444-4436-904E-D2CE8171D9A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

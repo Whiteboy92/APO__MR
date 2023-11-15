@@ -1,0 +1,66 @@
+﻿<Window x:Class="APO_Copy_MR.PrewittDirectionsWindow"
+        MinHeight="240"
+        MinWidth="340"
+        MaxHeight="240"
+        MaxWidth="340"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        Title="PrewittDirections" Height="auto" Width="auto">
+    <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60" />
+            <ColumnDefinition Width="60" />
+            <ColumnDefinition Width="60" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Choose Direction TextBox -->
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,10,0,0" >
+            <TextBox FontSize="16" Text="Choose direction" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </StackPanel>
+        
+        <!-- Top Row -->
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="RadioButton1" Grid.Column="0" Margin="15" Content="↖" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+            <RadioButton x:Name="RadioButton2" Grid.Column="1" Margin="15" Content="↑" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+            <RadioButton x:Name="RadioButton3" Grid.Column="2" Margin="15" Content="↗" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+        </Grid>
+        
+        <!-- Middle Row -->
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="RadioButton4" Grid.Column="0" Margin="15" Content="←" HorizontalAlignment="Right" VerticalAlignment="Center" />
+            <Button Grid.Column="1" Margin="15" Content="Ok" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnDoPrewittEdgeDetection_Click"/>
+            <RadioButton x:Name="RadioButton5" Grid.Column="2" Margin="15" Content="→" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        </Grid>
+        
+        <!-- Bottom Row -->
+        <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="RadioButton6" Grid.Column="0" Margin="15" Content="↙" HorizontalAlignment="Right" VerticalAlignment="Top" />
+            <RadioButton x:Name="RadioButton7" Grid.Column="1" Margin="15" Content="↓" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <RadioButton x:Name="RadioButton8" Grid.Column="2" Margin="15" Content="↘" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </Grid>
+    </Grid>
+</Window>
